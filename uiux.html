@@ -9,38 +9,31 @@
         <style>
             h1
             {
-                color: #fff;
-                font-family: 'Satoshi', sans-serif;
-                font-weight: bold;
-                font-size: 40px;
-                margin-top: auto;
-                margin-bottom: auto;
-                padding: 170px;
-                padding-bottom: 100px;
-
-                text-align: center;
-                justify-content: center;
-            }
-
-            body
-            {
-                background-color: #000;
+                padding-bottom: 80px !important;
             }
 
             h2
             {
-                font-family: "Raleway", sans-serif;
-                font-weight: bold;
-                font-size: 30px;
-                margin-top: auto;
-                margin-bottom: auto;
-                padding-left: 60px;
-                padding-top: 170px;
+                color: #fff !important;
+                font-family: 'Satoshi', sans-serif !important;
+                font-weight: bold !important;
+                font-size: 30px !important;
+                margin: 0 !important;
+                padding-left: 60px !important;
+                padding-top: 70px !important;
+                text-align: left !important;
+            }
+
+            .par
+            {
+                padding-top: 10px !important; 
+                padding-left: 60px !important;
+                margin: 5px 0 0 0 !important;
             }
 
             #gallery
             {
-                justify-content: center;
+                justify-content: center !important;
             }
 
             .images
@@ -53,46 +46,56 @@
 
             .container
             {
-                width: 1400px;
-                padding-left: 80px;
-                padding-bottom: 100px;
-                display: flex;
-                justify-content: center;
-
+                width: 1400px !important;
+                padding-left: 80px !important;
+                padding-bottom: 100px !important;
+                display: flex !important;
+                justify-content: center !important;
+                align-items: flex-start !important;
             }
 
             .container1
             {
-               width: 700px;
+               width: 700px !important;
             }
 
             .container2 {
-                width: 650px;
-                height: auto;
-                position: relative;
-                /* line-height: 5; */
+                width: 650px !important;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
             }
 
-            .par
-            {
-                color: #fff;
-                font-family: 'Satoshi', sans-serif;
-                font-weight: normal;
-                font-size: 18px;
-                margin-top: auto;
-                margin-bottom: auto;
+            .content-wrapper {
                 padding-left: 60px;
-                padding-top: 20px;
+                padding-right: 60px; 
             }
 
+            .container2 .top-info {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+
+            .container2 .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 50px;
+            }
+
+            .project-role,
             .project-date {
+                position: static;
+                font-size: 16px;
+                font-weight: bold;
                 color: #fff;
                 font-family: 'Satoshi', sans-serif;
-                font-size: 14px;
+            }
+
+            .bold {
                 font-weight: bold;
-                position: absolute;
-                top: 20px;
-                right: 20px;
             }
         </style>
     </head>
@@ -110,26 +113,20 @@
         <div id="gallery">
             <div class="container">
                 <div class="container1">
-                    <a href="subly.html">
+                    <a href="sori.html">
                     <img class="images" src="img/Lifelogging_Cover.png" alt="Sori_Cover"></a>
                 </div>
                 <div class="container2">
-                    <span class="project-date">July 2025</span>
-                    <a href="subly.html"><h2>Sori</h2></a>
-                    <p class="par">An always-on Cochl sound recognition feature integrated with AirPods, visualized through a UI/UX mockup</p>
-                </div>
-            </div>
-
-        <div id="gallery">
-            <div class="container">
-                <div class="container1">
-                    <a href="trojan_trade.html">
-                    <img class="images" src="img/Subly_Cover.png" alt="Trojan_Trade_Cover"></a>
-                </div>
-                <div class="container2">
-                    <span class="project-date">February 2025</span>
-                    <a href="trojan_trade.html"><h2>Trojan Trade</h2></a>
-                    <p class="par">A website for USC students to buy, sell, and rent secondhand items</p>
+                    <div class="content-wrapper">
+                        <div class="top-info">
+                            <span class="project-role">Design</span> 
+                            <span class="project-date">July 2025</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <a href="sori.html"><h2><strong>Sori</strong></h2></a>
+                        <p class="par">An always-on Cochl sound recognition feature integrated with AirPods, visualized through a UI/UX mockup</p>
+                    </div>
                 </div>
             </div>
 
@@ -140,9 +137,16 @@
                     <img class="images" src="img/Subly_Cover.png" alt="Subly_Cover"></a>
                 </div>
                 <div class="container2">
-                    <span class="project-date">September 2024</span>
-                    <a href="subly.html"><h2>Subly</h2></a>
-                    <p class="par">A safe, efficient subleasing platform tailored for college students</p>
+                    <div class="content-wrapper">
+                        <div class="top-info">
+                            <span class="project-role">Design</span> 
+                            <span class="project-date">September 2024</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <a href="subly.html"><h2><strong>Subly</strong></h2></a>
+                        <p class="par">A safe, efficient subleasing platform tailored for college students</p>
+                    </div>
                 </div>
             </div>
 
@@ -163,9 +167,16 @@
                     <img class="images" src="img/Refugee_Equality_Cover.png" alt="Refugee_Equality_Cover"></a>
                 </div>
                 <div class="container2">
-                    <span class="project-date">February 2021</span>
-                    <a href="refugee_quality.html"><h2>Refugee Quality</h2></a>
-                    <p class="par">A website that offers online courses, job opportunities, donations, and communication space to help refugees retain their basic rights</p>
+                    <div class="content-wrapper">
+                        <div class="top-info">
+                            <span class="project-role">Design</span> 
+                            <span class="project-date">February 2021</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <a href="refugee_quality.html"><h2 class="bold">Refugee Quality</h2></a>
+                        <p class="par">A website that offers online courses, job opportunities, donations, and communication space to help refugees retain their basic rights</p>
+                    </div>
                 </div>
             </div>
         </div>

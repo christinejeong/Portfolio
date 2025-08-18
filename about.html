@@ -3,64 +3,52 @@
     <head>
         <title>Christine Jeong | About Page</title>
         <link rel="stylesheet" href="portfolio.css">
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet"> 
 
         <meta charset="utf-8">
-        <meta name="keywords" content="Meta Tag, Responsive Web Design, USC, HTML, CSS">
-        <meta name="description" content="This is the 'about' section of the portfolio website. It introduces my interests, educational pathway, and hobbies, letting the viewers get to know me better as a person. I also included my resume.">
-
+        
         <style>
-            h1
-            {
-                color: #dd3c87;
-                font-family: 'Mexcellent3D', fantasy;
-                font-weight: normal;
-                font-size: 80px;
-                margin-top: auto;
-                margin-bottom: auto;
-                padding: 170px;
-                padding-bottom: 100px;
-
-                text-align: center;
-                justify-content: center;
+            h1 {
+                padding-bottom: 80px !important;
+            }
+            
+            body {
+                background-color: #000;
+                color: #fff;
+                font-family: 'Satoshi', sans-serif;
+                margin: 0;
+                padding: 0;
             }
 
-            body
-            {
-                background-color: #f7d4e4;
+            .pdf {
+                max-width: 90%;
+                height: 500px;
             }
 
-            h2
-            {
-                color: #dd3c87;
-                font-family: 'Mexcellent3D', fantasy;
-                font-weight: normal;
-                font-size: 40px;
-                text-align: center;
-                padding-bottom: 50px;
-            }
-
-            img
-            {
-                width: 400px;
-                padding: 30px;
-                padding-top: 0px;
-                padding-bottom: 80px;
-            }
-
-            #flexbox
-            {
+            #about-section .container {
                 display: flex;
-                /* padding: 15px; */
-                width: 950px;
-                margin-left: auto;
-                margin-right: auto;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 50px; /* space between image and text */
+                max-width: 1000px;
+                margin: auto;
+                flex-wrap: wrap; /* makes it responsive */
+                padding: 0 20px;
             }
 
-            .pdf
-            {
-                padding-left: 330px;
-                padding-bottom: 80px;
+            .profile-img {
+                width: 300px;
+                border-radius: 10px;
+            }
+
+            .about-text {
+                max-width: 600px;
+                font-size: 18px;
+                line-height: 1.6;
+            }
+
+            .about-text a {
+                color: #ffcc00; /* highlight links */
+                text-decoration: underline;
             }
 
         </style>
@@ -70,33 +58,28 @@
 
         <div id="navbar">
             <ul id="top-menu">
-                <li><a href="portfolio.html">HOME</a></li>
-                <li><a href="uiux.html">WORK</a></li>
-                <li><a href="graphic_design.html">OTHER</a></li>
-                <li><a id="selected-nav" href="about.html">ABOUT</a></li>
+                <li><a href="portfolio.html">Home</a></li>
+                <li><a href="uiux.html">Work</a></li>
+                <li><a id="selected-nav" href="about.html">About</a></li>
             </ul>
         </div>
 
-        <div id="flexbox">
-            <img src="img/IMG_5632_copy.PNG" alt="Profile">
-            <p>Hi! <br><br>
-
-                My name is Christine Jeong and I am a sophomore studying Physics/Computer Science at USC. <br><br>
-                
-                During high school, my main passion was exploring how to visually captivate my audience through digital art and graphic design. However, watching my sister grow as a software engineer, I was excited to learn more about coding and ended up taking computer science classes at USC where I saw first-hand the excitement and challenges that come with “Algorithmic Thinking”—precise and logical steps to accomplish a task or solve a problem. Learning more about HTML/CSS in ITP 104, I enjoyed how I could make visual changes through code and was immediately able to view the impact of my work. Such experiences made me realize my passion for utilizing technology and art for others. <br><br>
-                
-                Over the years, I've been developing my skills in Java, C++, and HTML/CSS and came to appreciate the beauty of problem solving and empathy. Now, I desire to combine my two strong passions and explore possibilities of new, creative ideas generated in the intersection of the visual arts and technology. I'm excited to delve deeper into areas of UI / UX design, software engineering, and graphic design. <br><br>
-                
-                In my free time, I love watching movies and shows, organizing my Spotify playlists, traveling, and playing tennis. Feel free to reach out! <br><br>
-
-                Work Email: <a href="mailto:jeongc@usc.edu">jeongc@usc.edu</a> <br><br>
-
-                Personal Email: <a href="mailto:jeongc@usc.edu">yunseojeong2004@gmail.com</a>
-            </p>
-        </div>
-
-        <h2>Resume</h2>
-        <object class="pdf" data="resume/resume_copy.pdf" width="800" height="500"></object>
+        <section id="about-section">
+            <div class="container">
+                <img src="img/IMG_5632_copy.PNG" alt="Profile" class="profile-img">
+                <div class="about-text">
+                    <p>Hi! My name is Christine Jeong, and I am a sophomore at USC studying Computer Science & Business Administration with a minor in Web Development.</p>
+                    <p>My passion lies at the intersection of software engineering and user-centered design, where I combine technical problem-solving with creative solutions that enhance user experiences.</p>
+                    <p>Over the past few years, I've gained hands-on experience building software and designing interfaces through internships and projects.</p>
+                    <!-- <p>I've contributed to real-time audio processing modules at Cochl Inc., developed React-based websites like Trojan Trade, and designed impactful designs such as Subly and Refugee Quality using Figma, Adobe Illustrator, and Wix.</p> -->
+                    <p>These experiences have strengthened my skills in C++, Python, JavaScript, React, and UI/UX design, while reinforcing my belief in creating technology that is both functional and intuitive.</p>
+                    <p>In my free time, I love watching movies, traveling, and playing tennis, and I'm always excited to connect with others who share my curiosity for technology and design.</p>
+                    <p>Email (Work): <a href="mailto:jeongc@usc.edu">jeongc@usc.edu</a><br>
+                    Email (Personal): <a href="mailto:yunseojeong0607@gmail.com">yunseojeong0607@gmail.com</a></p>
+                </div>
+            </div>
+        </section>
+    </body>
 
         <!-- <div id="footer">
             <p>Christine Jeong Portfolio &copy; 2024</p>
